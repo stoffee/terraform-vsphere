@@ -5,7 +5,7 @@ module "example-server-linuxvm" {
   instances     = 1
   vmname        = "cd-temp"
   vmrp          = "MainCluster/Resources"
-  network_cards = ["Name of the POrt Group in vSphere"]
+  network_cards = ["VM Network"]
   ipv4 = {
     "Name of the POrt Group in vSphere" = [] # To use DHCP create Empty list for each instance
   }
