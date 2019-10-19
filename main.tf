@@ -5,7 +5,7 @@ module "example-server-linuxvm" {
   instances     = 1
   vmname        = "cd-temp"
   vmrp          = "MainCluster/Resources"
-  network_cards = ["VM Network","Development"]
+  network_cards = ["VM Network"]
   ipv4 = {
     "VM Network" = [""] # To use DHCP create Empty list for each instance
   }
