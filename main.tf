@@ -7,7 +7,7 @@ module "example-server-linuxvm" {
   vmrp          = "MainCluster/Resources"
   network_cards = ["VM Network","Development"]
   ipv4 = {
-    "Name of the POrt Group in vSphere" = [] # To use DHCP create Empty list for each instance
+    "VM Network" = [] # To use DHCP create Empty list for each instance
   }
   dc        = "PacketDatacenter"
   datastore = "datastore1"
